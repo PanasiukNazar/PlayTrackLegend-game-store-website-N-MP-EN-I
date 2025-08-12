@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Play Track Legend</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Top online store offering the best PC and console games. Discover and buy your favorite titles today."
+        />
+        <meta
+            name="keywords"
+            content="PC games, console games, online game store, buy games online, video games, gaming shop, digital games, game downloads, best games 2025"
+        />
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css" />
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css" />
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="css/flexslider.css" />
+
+        <!-- Owl Carousel  -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="images/loc.png" type="image/x-icon" />
+
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            /* BASE & TYPOGRAPHY */
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana,
+                    sans-serif;
+                background-color: #fff8e1; /* light warm cream */
+                color: #333;
+            }
+            a {
+                color: #ffcc00;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            a:hover {
+                color: #e6b800;
+                text-decoration: underline;
+            }
+
+            /* HERO SLIDER */
+            #fh5co-hero {
+                position: relative;
+                height: 100vh;
+            }
+            #fh5co-hero .flexslider {
+                height: 100%;
+            }
+            #fh5co-hero .slides li {
+                height: 100vh;
+                background-size: cover;
+                background-position: center center;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+            #fh5co-hero .overlay-gradient {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(
+                    180deg,
+                    rgba(255 204 0 / 0.25) 0%,
+                    rgba(255 204 0 / 0.15) 70%,
+                    rgba(255 204 0 / 0.3) 100%
+                );
+                z-index: 0;
+            }
+            #fh5co-hero .slider-text {
+                position: relative;
+                z-index: 1;
+                max-width: 600px;
+                background: rgba(255, 255, 255, 0.85);
+                padding: 40px 35px;
+                border-radius: 20px;
+                box-shadow: 0 6px 20px rgb(255 204 0 / 0.3);
+                text-align: center;
+            }
+            #fh5co-hero .price {
+                font-weight: 700;
+                font-size: 2.4rem;
+                margin-bottom: 8px;
+                color: #ffcc00;
+            }
+            #fh5co-hero h2 {
+                font-weight: 800;
+                font-size: 2.8rem;
+                margin-bottom: 15px;
+                color: #333;
+            }
+            #fh5co-hero p {
+                font-size: 1.1rem;
+                line-height: 1.5;
+                margin-bottom: 25px;
+                color: #555;
+            }
+            #fh5co-hero .btn-primary.btn-outline {
+                border: 2px solid #ffcc00;
+                color: #ffcc00;
+                background: transparent;
+                font-weight: 700;
+                padding: 12px 32px;
+                border-radius: 40px;
+                transition: all 0.3s ease;
+                box-shadow: none;
+            }
+            #fh5co-hero .btn-primary.btn-outline:hover {
+                background: #ffcc00;
+                color: #fff;
+                box-shadow: 0 0 12px #ffcc00;
+            }
+
+            /* SERVICES SECTION */
+            #fh5co-services {
+                background: #fff;
+                padding: 70px 20px;
+            }
+            #fh5co-services .feature-center {
+                color: #444;
+                background: #fff8e1;
+                border: 2px solid #ffcc00;
+                padding: 30px 20px;
+                border-radius: 15px;
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+                cursor: default;
+            }
+            #fh5co-services .feature-center:hover {
+                background-color: #ffcc00;
+                color: #fff;
+                box-shadow: 0 10px 30px #ffcc00aa;
+            }
+            #fh5co-services .icon {
+                font-size: 48px;
+                margin-bottom: 18px;
+                color: #ffcc00;
+            }
+            #fh5co-services h3 {
+                font-weight: 700;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+            #fh5co-services p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            /* TESTIMONIALS */
+            #fh5co-testimonial {
+                background: #fff8e1;
+                padding: 70px 15px;
+                color: #444;
+            }
+            #fh5co-testimonial .fh5co-heading span {
+                color: #ffcc00;
+                font-weight: 700;
+                letter-spacing: 2.5px;
+                font-size: 13px;
+                text-transform: uppercase;
+            }
+            #fh5co-testimonial .fh5co-heading h2 {
+                font-weight: 900;
+                font-size: 2.8rem;
+                margin-bottom: 40px;
+                color: #333;
+            }
+            .testimony-slide {
+                background: #fff;
+                border: 2px solid #ffcc00;
+                padding: 25px 30px 40px;
+                border-radius: 20px;
+                box-shadow: 0 0 20px #ffcc0055;
+                max-width: 420px;
+                margin: 0 auto;
+            }
+            .testimony-slide figure {
+                margin: 0 auto 20px;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 3px solid #ffcc00;
+            }
+            .testimony-slide figure img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .testimony-slide span {
+                display: block;
+                font-weight: 600;
+                margin-bottom: 10px;
+                color: #ffcc00;
+            }
+            .testimony-slide blockquote p {
+                font-style: italic;
+                font-size: 1.05rem;
+                line-height: 1.5;
+                color: #666;
+            }
+
+            /* COUNTER */
+            #fh5co-counter {
+                background: #fff;
+                padding: 60px 15px;
+            }
+            #fh5co-counter .feature-center {
+                text-align: center;
+                color: #ffcc00;
+                padding: 15px 5px;
+            }
+            #fh5co-counter .feature-center .icon {
+                font-size: 44px;
+                margin-bottom: 8px;
+            }
+            #fh5co-counter .counter {
+                display: block;
+                font-size: 2.8rem;
+                font-weight: 900;
+                color: #333;
+            }
+            #fh5co-counter .counter-label {
+                font-size: 1.1rem;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                color: #666;
+            }
+
+            /* NEWSLETTER */
+            #fh5co-started {
+                background: #fff8e1;
+                padding: 60px 15px;
+                text-align: center;
+            }
+            #fh5co-started h2 {
+                font-size: 2.8rem;
+                font-weight: 900;
+                margin-bottom: 15px;
+                color: #ffcc00;
+            }
+            #fh5co-started p {
+                max-width: 500px;
+                margin: 0 auto 40px;
+                font-size: 1.1rem;
+                line-height: 1.5;
+                color: #444;
+            }
+            #fh5co-started form {
+                max-width: 480px;
+                margin: 0 auto;
+                display: flex;
+                gap: 14px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            #fh5co-started input[type="email"] {
+                flex: 1 1 280px;
+                padding: 14px 18px;
+                border: 2px solid #ffcc00;
+                border-radius: 35px;
+                font-size: 1rem;
+                background: #fff;
+                color: #444;
+                transition: border-color 0.3s ease;
+            }
+            #fh5co-started input[type="email"]::placeholder {
+                color: #bbb;
+            }
+            #fh5co-started input[type="email"]:focus {
+                outline: none;
+                border-color: #e6b800;
+                box-shadow: 0 0 12px #ffcc00;
+            }
+            #fh5co-started button {
+                padding: 14px 38px;
+                background: #ffcc00;
+                border: none;
+                border-radius: 35px;
+                color: #444;
+                font-weight: 800;
+                font-size: 1.1rem;
+                cursor: pointer;
+                transition: background 0.3s ease, color 0.3s ease;
+            }
+            #fh5co-started button:hover {
+                background: #e6b800;
+                color: #222;
+            }
+
+            /* RESPONSIVE */
+            @media (max-width: 767px) {
+                #fh5co-hero .slider-text {
+                    max-width: 90%;
+                    padding: 30px 20px;
+                }
+                #fh5co-services .feature-center {
+                    margin-bottom: 30px;
+                }
+                #fh5co-testimonial .testimony-slide {
+                    max-width: 100%;
+                }
+                #fh5co-started form {
+                    flex-direction: column;
+                }
+                #fh5co-started input[type="email"],
+                #fh5co-started button {
+                    width: 100%;
+                    border-radius: 30px;
+                }
+                #fh5co-started button {
+                    margin-top: 18px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fh5co-loader"></div>
+
+        <div id="page">
+            <nav class="fh5co-nav" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-2">
+                            <div id="fh5co-logo">
+                                <a href="index.html">Play Track Legend.</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 text-center menu-1">
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="product.html">Shop</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="favorite.html">Wishlist</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col-md-3 col-xs-4 text-right hidden-xs menu-2"
+                        >
+                            <ul>
+                                <li class="shopping-cart">
+                                    <a href="cart.html" class="cart">
+                                        <span>
+                                            <small
+                                                data-store-el="cartItemsCounter"
+                                                >0</small
+                                            >
+                                            <i class="icon-shopping-cart"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <aside id="fh5co-hero" class="js-fullheight">
+                <div class="flexslider js-fullheight">
+                    <ul class="slides">
+                        <li style="background-image: url(images/img_bg_1.jpg)">
+                            <div class="overlay-gradient"></div>
+                            <div class="container">
+                                <div
+                                    class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text"
+                                >
+                                    <div class="slider-text-inner">
+                                        <div class="desc">
+                                            <span class="price">$34.99</span>
+                                            <h2>Neon Citadel: Reborn</h2>
+                                            <p>
+                                                Step into Neon Citadel — a
+                                                cyber-noir open-world RPG built
+                                                for PC and consoles. Customize
+                                                gear, master neon-tech
+                                                abilities, and shape the city's
+                                                future.
+                                            </p>
+                                            <p>
+                                                <a
+                                                    href="product.html"
+                                                    class="btn btn-primary btn-outline btn-lg"
+                                                    >Buy Now</a
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(images/img_bg_2.jpg)">
+                            <div class="container">
+                                <div
+                                    class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text"
+                                >
+                                    <div class="slider-text-inner">
+                                        <div class="desc">
+                                            <span class="price">$29.99</span>
+                                            <h2>Turbo Drift Legends</h2>
+                                            <p>
+                                                Race elite cars across dynamic
+                                                tracks with realistic handling
+                                                and online leagues. Built for
+                                                speed lovers on both PC and
+                                                console platforms.
+                                            </p>
+                                            <p>
+                                                <a
+                                                    href="product.html"
+                                                    class="btn btn-primary btn-outline btn-lg"
+                                                    >Buy Now</a
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(images/img_bg_3.jpg)">
+                            <div class="container">
+                                <div
+                                    class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text"
+                                >
+                                    <div class="slider-text-inner">
+                                        <div class="desc">
+                                            <span class="price">$44.99</span>
+                                            <h2>Warden of Emberfall</h2>
+                                            <p>
+                                                A fantasy action-adventure with
+                                                tactical combat, expansive
+                                                dungeons, and cooperative
+                                                quests. Perfect for players who
+                                                love deep progression systems.
+                                            </p>
+                                            <p>
+                                                <a
+                                                    href="product.html"
+                                                    class="btn btn-primary btn-outline btn-lg"
+                                                    >Buy Now</a
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(images/img_bg_4.jpg)">
+                            <div class="container">
+                                <div
+                                    class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text"
+                                >
+                                    <div class="slider-text-inner">
+                                        <div class="desc">
+                                            <span class="price">$19.99</span>
+                                            <h2>Orbital Skirmish: Arena</h2>
+                                            <p>
+                                                Jump into fast-paced multiplayer
+                                                skirmishes with modular loadouts
+                                                and ranked modes. Lightweight
+                                                download, huge replayability for
+                                                PC and console players.
+                                            </p>
+                                            <p>
+                                                <a
+                                                    href="single.html"
+                                                    class="btn btn-primary btn-outline btn-lg"
+                                                    >Buy Now</a
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div id="fh5co-services" class="fh5co-bg-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 text-center">
+                            <div
+                                class="feature-center animate-box"
+                                data-animate-effect="fadeIn"
+                            >
+                                <span class="icon">
+                                    <i class="icon-credit-card"></i>
+                                </span>
+                                <h3>Trusted Checkout</h3>
+                                <p>
+                                    Secure, streamlined checkout supporting
+                                    major payment methods and instant order
+                                    confirmations. Buy with confidence — your
+                                    game keys are delivered safely and quickly.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 text-center">
+                            <div
+                                class="feature-center animate-box"
+                                data-animate-effect="fadeIn"
+                            >
+                                <span class="icon">
+                                    <i class="icon-wallet"></i>
+                                </span>
+                                <h3>Competitive Pricing</h3>
+                                <p>
+                                    We curate daily deals, seasonal discounts,
+                                    and bundle offers on top PC and console
+                                    titles so you always get the best value for
+                                    your collection.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 text-center">
+                            <div
+                                class="feature-center animate-box"
+                                data-animate-effect="fadeIn"
+                            >
+                                <span class="icon">
+                                    <i class="icon-paper-plane"></i>
+                                </span>
+                                <h3>Instant Delivery</h3>
+                                <p>
+                                    Receive official download links and digital
+                                    keys immediately after purchase. Start
+                                    playing within minutes on your preferred
+                                    platform.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fh5co-testimonial" class="fh5co-bg-section">
+                <div class="container">
+                    <div class="row animate-box">
+                        <div
+                            class="col-md-8 col-md-offset-2 text-center fh5co-heading"
+                        >
+                            <span>Player Feedback</span>
+                            <h2>Gamers' Reviews</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row animate-box">
+                                <div
+                                    class="owl-carousel owl-carousel-fullwidth"
+                                >
+                                    <div class="item">
+                                        <div
+                                            class="testimony-slide active text-center"
+                                        >
+                                            <figure>
+                                                <img
+                                                    src="images/person1.jpg"
+                                                    alt="user"
+                                                />
+                                            </figure>
+                                            <span
+                                                >Emily Carter, via
+                                                <a href="#" class="twitter"
+                                                    >Twitter</a
+                                                ></span
+                                            >
+                                            <blockquote>
+                                                <p>
+                                                    “Huge selection of PC and
+                                                    console titles, fast key
+                                                    delivery and a seamless
+                                                    checkout. Found exclusive
+                                                    editions I couldn't get
+                                                    anywhere else.”
+                                                </p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div
+                                            class="testimony-slide active text-center"
+                                        >
+                                            <figure>
+                                                <img
+                                                    src="images/person2.jpg"
+                                                    alt="user"
+                                                />
+                                            </figure>
+                                            <span
+                                                >Lucas Reed, via
+                                                <a href="#" class="twitter"
+                                                    >Twitter</a
+                                                ></span
+                                            >
+                                            <blockquote>
+                                                <p>
+                                                    “Great deals and frequent
+                                                    bundle offers. Customer
+                                                    support answered my
+                                                    activation question within
+                                                    minutes — back in the game
+                                                    quickly.”
+                                                </p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div
+                                            class="testimony-slide active text-center"
+                                        >
+                                            <figure>
+                                                <img
+                                                    src="images/person3.jpg"
+                                                    alt="user"
+                                                />
+                                            </figure>
+                                            <span
+                                                >Sarah Bennett, via
+                                                <a href="#" class="twitter"
+                                                    >Twitter</a
+                                                ></span
+                                            >
+                                            <blockquote>
+                                                <p>
+                                                    “I love the clear platform
+                                                    labels and instant delivery
+                                                    of keys. Library management
+                                                    on PC has never been easier
+                                                    thanks to their
+                                                    recommendations.”
+                                                </p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                id="fh5co-counter"
+                class="fh5co-bg fh5co-counter"
+                style="background-image: url(images/img_bg_5.jpg)"
+            >
+                <div class="container">
+                    <div class="row">
+                        <div class="display-t">
+                            <div class="display-tc">
+                                <div class="col-md-3 col-sm-6 animate-box">
+                                    <div class="feature-center">
+                                        <span class="icon">
+                                            <i class="icon-eye"></i>
+                                        </span>
+                                        <span
+                                            class="counter js-counter"
+                                            data-from="0"
+                                            data-to="8425"
+                                            data-speed="4500"
+                                            data-refresh-interval="50"
+                                            >1</span
+                                        >
+                                        <span class="counter-label"
+                                            >Titles in Catalog</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 animate-box">
+                                    <div class="feature-center">
+                                        <span class="icon">
+                                            <i class="icon-shopping-cart"></i>
+                                        </span>
+                                        <span
+                                            class="counter js-counter"
+                                            data-from="0"
+                                            data-to="37250"
+                                            data-speed="4500"
+                                            data-refresh-interval="50"
+                                            >1</span
+                                        >
+                                        <span class="counter-label"
+                                            >Orders Completed</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 animate-box">
+                                    <div class="feature-center">
+                                        <span class="icon">
+                                            <i class="icon-shop"></i>
+                                        </span>
+                                        <span
+                                            class="counter js-counter"
+                                            data-from="0"
+                                            data-to="120"
+                                            data-speed="4500"
+                                            data-refresh-interval="50"
+                                            >1</span
+                                        >
+                                        <span class="counter-label"
+                                            >Exclusive Releases</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 animate-box">
+                                    <div class="feature-center">
+                                        <span class="icon">
+                                            <i class="icon-clock"></i>
+                                        </span>
+                                        <span
+                                            class="counter js-counter"
+                                            data-from="0"
+                                            data-to="985000"
+                                            data-speed="4500"
+                                            data-refresh-interval="50"
+                                            >1</span
+                                        >
+                                        <span class="counter-label"
+                                            >Minutes of Play Activated</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="fh5co-footer" role="contentinfo">
+                <div class="container">
+                    <div class="row row-pb-md">
+                        <div class="col-md-4 fh5co-widget">
+                            <h3>Play Track Legend Shop</h3>
+                            <p>
+                                Your destination for curated PC and console
+                                games, DLCs, and seasonal bundles. We offer
+                                secure purchases, instant digital key delivery,
+                                and curated recommendations for every gamer.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                            <ul class="fh5co-footer-links">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="cart.html">Contact</a></li>
+                                <li><a href="terms-of-use.html">Terms</a></li>
+                                <li>
+                                    <a href="cookie-policy.html">Cookies</a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html">Privacy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                            <ul class="fh5co-footer-links">
+                                <li>
+                                    <a href="#"
+                                        >2079 Carp Rd, Carp, ON K0A 1L0</a
+                                    >
+                                </li>
+                                <li><a href="#">+61295809888</a></li>
+                                <li>
+                                    <a href="#">play_track_legend@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Cookie Banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie Notice</h2>
+            </div>
+            <div class="data">
+                <p>
+                    This website uses cookies to enhance your browsing and
+                    shopping experience in our PC and console games store.
+                    <a href="cookie-policy.html">Learn more...</a>
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">I accept</button>
+                <button class="cookie-button" id="declineBtn">I decline</button>
+            </div>
+        </div>
+        <!-- End Cookie Banner -->
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        </div>
+
+        <!-- jQuery -->
+        <!-- jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- jQuery Easing -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- Bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Waypoints -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- Owl Carousel (not on Google or jQuery CDN, use jsDelivr CDN) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- jQuery CountTo (use jsDelivr CDN) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery-countto@1.2.0/jquery.countTo.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Flexslider (not on Google or jQuery CDN, use jsDelivr CDN) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/flexslider@2.7.2/jquery.flexslider-min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Your local scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/store.js"></script>
+        <script src="js/cookiebanner.js"></script>
+        <script src="products.js"></script>
+    </body>
+</html>

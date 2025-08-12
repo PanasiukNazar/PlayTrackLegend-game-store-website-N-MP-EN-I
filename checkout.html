@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Play Track Legend</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Top online store offering the best PC and console games. Discover and buy your favorite titles today."
+        />
+        <meta
+            name="keywords"
+            content="PC games, console games, online game store, buy games online, video games, gaming shop, digital games, game downloads, best games 2025"
+        />
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css" />
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css" />
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="css/flexslider.css" />
+
+        <!-- Owl Carousel  -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="images/loc.png" type="image/x-icon" />
+
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            /* Checkout Section */
+            .checkout-form h2 {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            .checkout-form p {
+                color: #666;
+                margin-bottom: 30px;
+            }
+
+            .checkout-form .form-group {
+                margin-bottom: 20px;
+            }
+
+            .checkout-form .form-group label {
+                font-weight: 500;
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            .checkout-form .form-group label span {
+                color: red;
+                margin-left: 2px;
+            }
+
+            .checkout-form .form-group input,
+            .checkout-form .form-group select {
+                width: 100%;
+                padding: 10px 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+
+            .get-button .btn {
+                width: 100%;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 12px 20px;
+                border-radius: 5px;
+                background-color: #ff9800;
+                color: white;
+                border: none;
+                transition: background-color 0.3s ease;
+            }
+
+            .get-button .btn:hover {
+                background-color: #0056b3;
+            }
+
+            .order-details {
+                background-color: #f9f9f9;
+                padding: 25px;
+                border: 1px solid #eaeaea;
+                border-radius: 5px;
+                margin-top: 30px;
+            }
+
+            .order-details h2 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .single-widget ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .single-widget ul li {
+                font-size: 16px;
+                padding: 8px 0;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .single-widget ul li span {
+                float: right;
+            }
+
+            .checkbox {
+                margin-top: 10px;
+            }
+
+            .checkbox label {
+                font-weight: 400;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fh5co-loader"></div>
+
+        <div id="page">
+            <nav class="fh5co-nav" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-2">
+                            <div id="fh5co-logo">
+                                <a href="index.html">Play Track Legend.</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 text-center menu-1">
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="product.html">Shop</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="favorite.html">Wishlist</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col-md-3 col-xs-4 text-right hidden-xs menu-2"
+                        >
+                            <ul>
+                                <li class="shopping-cart">
+                                    <a href="cart.html" class="cart">
+                                        <span>
+                                            <small
+                                                data-store-el="cartItemsCounter"
+                                                >0</small
+                                            >
+                                            <i class="icon-shopping-cart"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Start Checkout -->
+            <section class="shop checkout section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12">
+                            <div class="checkout-form">
+                                <h2>Payment</h2>
+                                <p>
+                                    Create an account for a faster checkout
+                                    experience.
+                                </p>
+                                <!-- Form -->
+                                <form
+                                    class="form"
+                                    method="GET"
+                                    action="thanks.html"
+                                >
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label
+                                                    >First Name<span
+                                                        >*</span
+                                                    ></label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    name="firstName"
+                                                    placeholder=""
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label
+                                                    >Last Name<span
+                                                        >*</span
+                                                    ></label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    name="lastName"
+                                                    placeholder=""
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label
+                                                    >Email Address<span
+                                                        >*</span
+                                                    ></label
+                                                >
+                                                <input
+                                                    type="email"
+                                                    name="email"
+                                                    placeholder=""
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label
+                                                    >Phone Number<span
+                                                        >*</span
+                                                    ></label
+                                                >
+                                                <input
+                                                    type="tel"
+                                                    name="phone"
+                                                    placeholder=""
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label
+                                                    >Region<span>*</span></label
+                                                >
+                                                <select
+                                                    name="region"
+                                                    id="region"
+                                                >
+                                                    <option
+                                                        value="north-america"
+                                                        selected
+                                                    >
+                                                        North America
+                                                    </option>
+                                                    <option value="europe">
+                                                        Europe
+                                                    </option>
+                                                    <option value="asia">
+                                                        Asia
+                                                    </option>
+                                                    <option value="australia">
+                                                        Australia
+                                                    </option>
+                                                    <option value="other">
+                                                        Other
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label
+                                                    >Address 1<span
+                                                        >*</span
+                                                    ></label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    name="address1"
+                                                    placeholder=""
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label>Address 2</label>
+                                                <input
+                                                    type="text"
+                                                    name="address2"
+                                                    placeholder=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Button Widget -->
+                                    <div class="single-widget get-button">
+                                        <div class="content">
+                                            <a class="button">
+                                                <button
+                                                    class="btn btn-primary py-4 px-lg-5 d-lg-block"
+                                                    type="submit"
+                                                    data-store-el="cartEmptyDisabled"
+                                                >
+                                                    Submit Order
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--/ End Button Widget -->
+                                </form>
+                                <!--/ End Form -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="order-details">
+                                <!-- Order Widget -->
+                                <div class="single-widget">
+                                    <h2>ORDER SUMMARY</h2>
+                                    <div class="content">
+                                        <ul>
+                                            <li class="last">
+                                                Total Amount
+                                                <span>
+                                                    <span
+                                                        data-store-el="cartTotal"
+                                                    ></span
+                                                    >$
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--/ End Order Widget -->
+                                <!-- Order Widget -->
+                                <div class="single-widget">
+                                    <h2>Payment Method</h2>
+                                    <div class="content">
+                                        <div class="checkbox">
+                                            <label
+                                                class="checkbox-inline"
+                                                for="payment-cod"
+                                            >
+                                                <input
+                                                    name="paymentMethod"
+                                                    id="payment-cod"
+                                                    type="checkbox"
+                                                />
+                                                Pay on Delivery
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/ End Order Widget -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/ End Checkout -->
+
+            <footer id="fh5co-footer" role="contentinfo">
+                <div class="container">
+                    <div class="row row-pb-md">
+                        <div class="col-md-4 fh5co-widget">
+                            <h3>Play Track Legend Shop</h3>
+                            <p>
+                                Your destination for curated PC and console
+                                games, DLCs, and seasonal bundles. We offer
+                                secure purchases, instant digital key delivery,
+                                and curated recommendations for every gamer.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                            <ul class="fh5co-footer-links">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="cart.html">Contact</a></li>
+                                <li><a href="terms-of-use.html">Terms</a></li>
+                                <li>
+                                    <a href="cookie-policy.html">Cookies</a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html">Privacy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                            <ul class="fh5co-footer-links">
+                                <li>
+                                    <a href="#"
+                                        >2079 Carp Rd, Carp, ON K0A 1L0</a
+                                    >
+                                </li>
+                                <li><a href="#">+61295809888</a></li>
+                                <li>
+                                    <a href="#">play_track_legend@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Cookie Banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie Notice</h2>
+            </div>
+            <div class="data">
+                <p>
+                    This website uses cookies to enhance your browsing and
+                    shopping experience in our PC and console games store.
+                    <a href="cookie-policy.html">Learn more...</a>
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">I accept</button>
+                <button class="cookie-button" id="declineBtn">I decline</button>
+            </div>
+        </div>
+        <!-- End Cookie Banner -->
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        </div>
+
+        <!-- jQuery -->
+        <!-- jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- jQuery Easing -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- Bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Waypoints -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- Owl Carousel (not on Google or jQuery CDN, use jsDelivr CDN) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- jQuery CountTo (use jsDelivr CDN) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery-countto@1.2.0/jquery.countTo.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Flexslider (not on Google or jQuery CDN, use jsDelivr CDN) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/flexslider@2.7.2/jquery.flexslider-min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Your local scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/store.js"></script>
+        <script src="js/cookiebanner.js"></script>
+        <script src="products.js"></script>
+    </body>
+</html>

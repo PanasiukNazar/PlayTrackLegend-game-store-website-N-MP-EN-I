@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Play Track Legend</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Top online store offering the best PC and console games. Discover and buy your favorite titles today."
+        />
+        <meta
+            name="keywords"
+            content="PC games, console games, online game store, buy games online, video games, gaming shop, digital games, game downloads, best games 2025"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css" />
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css" />
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="css/flexslider.css" />
+
+        <!-- Owl Carousel  -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="images/loc.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="images/loc.png" type="image/x-icon" />
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            .shopping-cart .table .product-name a {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: #000;
+            }
+
+            .shopping-cart .table .product-name a:hover {
+                color: #ff9800;
+            }
+
+            .shopping-cart .table .product-des {
+                font-size: 13px;
+                color: #555;
+            }
+
+            .shopping-cart .table .price span,
+            .shopping-cart .table .total-amount span {
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            .shopping-cart .table .action a {
+                color: #d9534f;
+                font-size: 16px;
+            }
+
+            .shopping-cart .total-amount ul {
+                list-style: none;
+                padding: 0;
+                margin-bottom: 20px;
+            }
+
+            .shopping-cart .total-amount ul li {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .shopping-cart .total-amount .btn {
+                background-color: #ff9800;
+                color: #fff;
+                margin-right: 10px;
+            }
+
+            .shopping-cart .total-amount .btn:hover {
+                background-color: #b6a76a;
+                color: #fff;
+            }
+
+            .product-grid img {
+                max-width: 100px;
+                height: auto;
+            }
+            .shopping-summary img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            @media (max-width: 768px) {
+                .shopping-cart .table {
+                    font-size: 12px;
+                }
+
+                .shopping-cart .total-amount ul li {
+                    font-size: 16px;
+                }
+
+                .shopping-cart .total-amount .btn {
+                    margin-top: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fh5co-loader"></div>
+
+        <div id="page">
+            <nav class="fh5co-nav" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-2">
+                            <div id="fh5co-logo">
+                                <a href="index.html">Play Track Legend.</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 text-center menu-1">
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="product.html">Shop</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="favorite.html">Wishlist</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col-md-3 col-xs-4 text-right hidden-xs menu-2"
+                        >
+                            <ul>
+                                <li class="shopping-cart">
+                                    <a href="cart.html" class="cart">
+                                        <span>
+                                            <small
+                                                data-store-el="cartItemsCounter"
+                                                >0</small
+                                            >
+                                            <i class="icon-shopping-cart"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Shopping Cart -->
+            <div
+                class="shopping-cart section"
+                style="padding: 50px 0; background-color: #f9fafb"
+            >
+                <div class="container">
+                    <div class="row" style="overflow: auto">
+                        <div class="col-12">
+                            <!-- Shopping Summary -->
+                            <table
+                                class="table shopping-summary"
+                                style="
+                                    background: white;
+                                    border-radius: 12px;
+                                    overflow: hidden;
+                                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                                "
+                            >
+                                <thead style="background-color: #f1f5f9">
+                                    <tr class="main-heading">
+                                        <th style="padding: 15px">PRODUCT</th>
+                                        <th style="padding: 15px">TITLE</th>
+                                        <th
+                                            class="text-center"
+                                            style="padding: 15px"
+                                        >
+                                            PRICE
+                                        </th>
+                                        <th
+                                            class="text-center"
+                                            style="padding: 15px"
+                                        >
+                                            QUANTITY
+                                        </th>
+                                        <th
+                                            class="text-center"
+                                            style="padding: 15px"
+                                        >
+                                            TOTAL
+                                        </th>
+                                        <th
+                                            class="text-center"
+                                            style="padding: 15px"
+                                        >
+                                            <i class="ti-trash remove-icon"></i>
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody data-store-el="cartItems"></tbody>
+                            </table>
+                            <!--/ End Shopping Summary -->
+
+                            <template data-store-el="cartItemTemplate">
+                                <tr style="transition: background 0.2s">
+                                    <td
+                                        class="image"
+                                        data-title="No"
+                                        style="padding: 15px"
+                                    >
+                                        <img
+                                            data-store-el="itemImage"
+                                            alt="#"
+                                            style="
+                                                width: 70px;
+                                                height: auto;
+                                                border-radius: 8px;
+                                                border: 1px solid #e5e7eb;
+                                            "
+                                        />
+                                    </td>
+                                    <td
+                                        class="product-des"
+                                        data-title="Description"
+                                        style="padding: 15px"
+                                    >
+                                        <p
+                                            class="product-name"
+                                            style="
+                                                font-weight: 600;
+                                                margin-bottom: 5px;
+                                            "
+                                        >
+                                            <a
+                                                data-store-el="itemTitle"
+                                                style="
+                                                    color: #ff9800;
+                                                    text-decoration: none;
+                                                "
+                                            ></a>
+                                        </p>
+                                        <p
+                                            class="product-des"
+                                            data-store-el="itemDescription"
+                                            style="
+                                                color: #6b7280;
+                                                font-size: 14px;
+                                            "
+                                        ></p>
+                                    </td>
+                                    <td
+                                        class="price"
+                                        data-title="Price"
+                                        style="padding: 15px"
+                                    >
+                                        <span
+                                            data-store-el="itemPrice"
+                                            style="font-weight: 500"
+                                        ></span>
+                                    </td>
+                                    <td
+                                        class="qty"
+                                        data-title="Qty"
+                                        style="padding: 15px"
+                                    >
+                                        <!-- Input Order -->
+                                        <div
+                                            class="input-group"
+                                            style="
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                            "
+                                        >
+                                            <button
+                                                type="button"
+                                                class="btn btn-outline-primary btn-number"
+                                                data-type="minus"
+                                                data-field="quant[1]"
+                                                data-store-el="cartItemDecrementCount"
+                                                style="
+                                                    width: 36px;
+                                                    height: 36px;
+                                                    border-radius: 6px;
+                                                "
+                                            >
+                                                -
+                                            </button>
+                                            <input
+                                                type="text"
+                                                name="quant[1]"
+                                                class="input-number text-center"
+                                                data-min="1"
+                                                data-max="100"
+                                                data-store-el="cartItemCount"
+                                                disabled
+                                                style="
+                                                    width: 50px;
+                                                    margin: 5px 0;
+                                                    border: 1px solid #d1d5db;
+                                                    border-radius: 6px;
+                                                    text-align: center;
+                                                "
+                                            />
+                                            <button
+                                                type="button"
+                                                class="btn btn-outline-primary btn-number"
+                                                data-type="plus"
+                                                data-field="quant[1]"
+                                                data-store-el="cartItemIncrementCount"
+                                                style="
+                                                    width: 36px;
+                                                    height: 36px;
+                                                    border-radius: 6px;
+                                                "
+                                            >
+                                                +
+                                            </button>
+                                        </div>
+                                        <!--/ End Input Order -->
+                                    </td>
+                                    <td
+                                        class="total-amount"
+                                        data-title="Total"
+                                        style="padding: 15px"
+                                    >
+                                        <span
+                                            data-store-el="cartItemTotal"
+                                            style="font-weight: 600"
+                                        ></span
+                                        >$
+                                    </td>
+                                    <td
+                                        class="action"
+                                        data-title="Remove"
+                                        style="padding: 15px"
+                                    >
+                                        <a
+                                            data-store-el="cartItemRemove"
+                                            style="
+                                                color: #ef4444;
+                                                cursor: pointer;
+                                            "
+                                        >
+                                            <i class="fa fa-solid fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 20px">
+                        <div class="col-12">
+                            <!-- Total Amount -->
+                            <div
+                                class="total-amount"
+                                style="
+                                    background: white;
+                                    padding: 20px;
+                                    border-radius: 12px;
+                                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                                "
+                            >
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <div
+                                            class="right"
+                                            style="text-align: right"
+                                        >
+                                            <ul
+                                                style="
+                                                    list-style: none;
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    font-size: 18px;
+                                                    font-weight: bold;
+                                                    color: #374151;
+                                                "
+                                            >
+                                                <li class="last">
+                                                    Total Amount
+                                                    <span
+                                                        style="color: #ff9800"
+                                                    >
+                                                        <span
+                                                            data-store-el="cartTotal"
+                                                        ></span
+                                                        >$
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="button5"
+                                                style="margin-top: 15px"
+                                            >
+                                                <a
+                                                    href="checkout.html"
+                                                    class="btn"
+                                                    style="
+                                                        background-color: #ff9800;
+                                                        color: white;
+                                                        padding: 10px 20px;
+                                                        border-radius: 8px;
+                                                        text-decoration: none;
+                                                        margin-right: 10px;
+                                                    "
+                                                    >Proceed to Checkout</a
+                                                >
+                                                <a
+                                                    href="index.html"
+                                                    class="btn"
+                                                    style="
+                                                        background-color: #e5e7eb;
+                                                        color: #374151;
+                                                        padding: 10px 20px;
+                                                        border-radius: 8px;
+                                                        text-decoration: none;
+                                                    "
+                                                    >Continue Shopping</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Total Amount -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ End Shopping Cart -->
+
+            <footer id="fh5co-footer" role="contentinfo">
+                <div class="container">
+                    <div class="row row-pb-md">
+                        <div class="col-md-4 fh5co-widget">
+                            <h3>Play Track Legend Shop</h3>
+                            <p>
+                                Your destination for curated PC and console
+                                games, DLCs, and seasonal bundles. We offer
+                                secure purchases, instant digital key delivery,
+                                and curated recommendations for every gamer.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                            <ul class="fh5co-footer-links">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="cart.html">Contact</a></li>
+                                <li><a href="terms-of-use.html">Terms</a></li>
+                                <li>
+                                    <a href="cookie-policy.html">Cookies</a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html">Privacy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                            <ul class="fh5co-footer-links">
+                                <li>
+                                    <a href="#"
+                                        >2079 Carp Rd, Carp, ON K0A 1L0</a
+                                    >
+                                </li>
+                                <li><a href="#">+61295809888</a></li>
+                                <li>
+                                    <a href="#">play_track_legend@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Cookie Banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie Notice</h2>
+            </div>
+            <div class="data">
+                <p>
+                    This website uses cookies to enhance your browsing and
+                    shopping experience in our PC and console games store.
+                    <a href="cookie-policy.html">Learn more...</a>
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">I accept</button>
+                <button class="cookie-button" id="declineBtn">I decline</button>
+            </div>
+        </div>
+        <!-- End Cookie Banner -->
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        </div>
+
+        <!-- jQuery -->
+        <!-- jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- jQuery Easing -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- Bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Waypoints -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- Owl Carousel (not on Google or jQuery CDN, use jsDelivr CDN) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- jQuery CountTo (use jsDelivr CDN) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery-countto@1.2.0/jquery.countTo.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Flexslider (not on Google or jQuery CDN, use jsDelivr CDN) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/flexslider@2.7.2/jquery.flexslider-min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Your local scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/store.js"></script>
+        <script src="js/cookiebanner.js"></script>
+        <script src="products.js"></script>
+    </body>
+</html>
